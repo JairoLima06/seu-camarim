@@ -1,0 +1,58 @@
+/* Media Query para telas menores (celulares e tablets) */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    .imagem-espelho {
+        width: auto; /* Ajustar a largura para 90% em dispositivos menores */
+        height: 300px; /* Reduzir a altura para 300px em dispositivos menores */
+    }
+
+}
+
+/* Media Query para telas muito pequenas (ex: smartphones em modo retrato) */
+@media (max-width: 480px) {
+    .container {
+        height: 100vh;
+    }
+
+    h1 {
+        font-size: 1.2em; /* Ajustar o tamanho do título */
+    }
+
+    .mirror {
+        height: 250px; /* Ajusta ainda mais a altura do espelho */
+    }
+
+    video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    }
+
+    .imagem-espelho {
+        position: fixed;
+        top: 0em;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+    }
+
+    h2 {
+        margin: 0;
+        width: auto;
+    }
+
+
+}
